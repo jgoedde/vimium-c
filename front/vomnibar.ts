@@ -144,9 +144,9 @@ var VCID_: string | undefined = VCID_ || "", VHost_: string | undefined = VHost_
  */
       const prefix = '" style="background-image: url(&quot;';
       if (Build.MV3) {
-        a._favPrefix = prefix + location.origin + "/_favicon/?size=" + (16 * favScale) + "&pageUrl="
+        a._favPrefix = prefix + location.origin + "/_favicon/?size=" + (32 * favScale) + "&pageUrl="
       } else {
-        a._favPrefix = prefix + "chrome://favicon/size/16@" + favScale + "x/"
+        a._favPrefix = prefix + "chrome://favicon/size/32@" + favScale + "x/"
       }
     }
     keyword = (keyword || "") + "";
